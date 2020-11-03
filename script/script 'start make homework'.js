@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function(){
       }
       
       function updateClock () {
-        let timer = getTimeRemaining();
+        let timer = getTimeRemaining(); // получаем значения seconds, minutes, hours
         timerHours.textContent = timer.hours;
         timerMinutes.textContent = timer.minutes;
         timerSeconds.textContent = timer.seconds;
@@ -32,6 +32,6 @@ window.addEventListener('DOMContentLoaded', function(){
       updateClock();
   }
 
-  countTimer('01 july 2021');
+  countTimer('04 november 2020');
 
 });
