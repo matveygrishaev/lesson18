@@ -46,12 +46,17 @@ window.addEventListener('DOMContentLoaded', function(){
           if (timer.timeRemaining < 0) {
               clearInterval(idInterval);
               timerHours.textContent = '00';
+              timerHours.style.color = 'tomato';
+
               timerMinutes.textContent = '00';
+              timerMinutes.style.color = 'tomato';
+
               timerSeconds.textContent = '00';
+              timerSeconds.style.color = 'tomato';
           }
         } // получаем и записываем значения seconds, minutes, hours
 
         idInterval = setInterval(updateClock, 1000);
     }
-    countTimer('03 november 2020 21:45:25');
+    countTimer('03 november 2020 23:32:20');
 });
